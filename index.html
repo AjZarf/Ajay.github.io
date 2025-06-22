@@ -259,6 +259,31 @@
   <p>Location: Glasgow, Scotland (or) Coimbatore, India</p>
 </section>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  const experienceImages = [
+    "images/exp1.jpg",
+    "images/exp2.jpg",
+    "images/exp3.jpg"
+  ];
+  let expIndex = 0;
+  setInterval(() => {
+    const carouselImage = document.getElementById('carouselImage');
+    if (carouselImage) {
+      expIndex = (expIndex + 1) % experienceImages.length;
+      carouselImage.src = experienceImages[expIndex];
+    }
+  }, 2000);
+</script>
+
+<footer>
+  <p>© 2025 Ajay Balaji Rangan</p>
+</footer>
+
+</body>
+</html>
+
 
 <!-- Other content such as Internship, Skills, Projects, etc., would continue here -->
 <!-- For brevity, continuation will be added in another chunk -->
